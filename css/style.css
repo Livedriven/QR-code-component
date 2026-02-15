@@ -1,2 +1,71 @@
 @import url(reset.css);
 @import url(variable.css);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+    "main"
+    "footer"
+    ;
+    grid-template-rows: 1fr auto;
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    background-color: var(--bg-body);
+}
+
+.main-container{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-qr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    padding: 10px;
+    height: 400px;
+    background-color: var(--bg-card);
+    border-radius: 12px;
+}
+.container-qr p{
+    text-align: center;
+}
+.container-qr img{
+    width: 100%;
+    height: 70%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+.container-qr .paragraph-1{
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-weight: 700;
+}
+.container-qr .paragraph-2{
+    font-size: 11px;
+    color: var(--color-sub);
+    font-weight: 400;
+    margin-top: 6px;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 19px;
+}
+
+.attribution {
+    grid-area: footer;
+}
+.attribution p{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
